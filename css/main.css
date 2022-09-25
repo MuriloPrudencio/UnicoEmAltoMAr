@@ -271,9 +271,10 @@ body {
 }
 
 .background div.title {
+    position: absolute;
     text-align: start;
     line-height: 3em;
-    margin-top: 22.5%;
+    margin-top: 25em;
 }
 
 .background div.title h2 {
@@ -686,7 +687,7 @@ body {
 /*contador regressivo*/
 .block-garanta {
     position: relative;
-    left: 43%;
+    margin: 0 auto;
     top: 8em;
     background-color: #c1ad85;
     width: 250px;
@@ -874,6 +875,7 @@ body {
 }
 
 /*responsivo*/
+
 @media only screen and (max-width: 1351px){
     .atracoes {
         width: 50%!important;
@@ -883,6 +885,10 @@ body {
         width: 300px;
         height: 550px;
         display: none;
+    }
+
+    .video-container {
+        flex-direction: column;
     }
 
     
@@ -968,7 +974,7 @@ body {
 
 @media only screen and (max-width: 850px){
     .background div.title h2{
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .background .back-apresentacao{
         margin: 5% auto;
@@ -1037,6 +1043,10 @@ body {
     .apresentacao-video p {
         font-size: .9em;
     }
+
+    .conteiner-countdown{
+        margin-bottom: 5%;
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -1074,6 +1084,11 @@ body {
 
     .fa-whatsapp {
         margin-top: 10px;
+    }
+
+    .jorge-mateus-container{
+        width: 90%;
+        margin: 0em 1em;
     }
 }
 
