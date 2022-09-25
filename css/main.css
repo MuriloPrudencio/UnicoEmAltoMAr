@@ -721,7 +721,7 @@ body {
 /*contador regressivo*/
 .block-garanta {
     position: relative;
-    left: 45%;
+    left: 43%;
     top: 8em;
     background-color: #c1ad85;
     width: 250px;
@@ -761,6 +761,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 2rem;
+    color: #fff;
 }
 
 /*slide show cabine*/
