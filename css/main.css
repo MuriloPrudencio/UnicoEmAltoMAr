@@ -677,6 +677,27 @@ body {
     width: 100%;
 }
 
+.compre-on figure{
+    margin-top: 5%!important;
+    margin-bottom: 5%!important;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.compre-on img {
+  width: 100%;
+}
+
+#compre-online figure.adq-jm  {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 5%!important;
+}
+
+#compre-online figure.adq-jm img {
+    width: 100%;
+}
+
 .content-border {
     margin: 0 auto;
     width: 125px;
@@ -984,7 +1005,7 @@ body {
     }
 
     .msc-design{
-        height: 450px!important;
+        height: 320px!important;
     }
     .msc-intretenimento {
         height: 300px;
@@ -1159,6 +1180,15 @@ body {
         margin-top: -5%!important;
         margin-bottom: 5%;
     }
+
+    #compre-online figure.adq-jm  {
+        width: 370px;
+        margin-bottom: 10%!important;
+    }
+
+    .compre-on figure{
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 510px) {
@@ -1174,6 +1204,10 @@ body {
         width: 150px;
         margin-top: 225px;
         
+    }
+
+    .msc-design {
+        height: 350px!important;
     }
 
     
