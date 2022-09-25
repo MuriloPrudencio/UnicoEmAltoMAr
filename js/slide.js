@@ -99,7 +99,7 @@ $(document).ready(function() {
   
   $("#slider1").sliderResponsive({
     slidePause: 5000,
-    fadeSpeed: 8000,
+    fadeSpeed: 400,
     autoPlay: "on",
     showArrows: "off", 
     hideDots: "off", 
