@@ -6,7 +6,7 @@
     var set = $.extend( 
       {
         slidePause: 5000,
-        fadeSpeed: 400,
+        fadeSpeed: 800,
         autoPlay: "on",
         showArrows: "off", 
         hideDots: "off", 
@@ -99,7 +99,7 @@ $(document).ready(function() {
   
   $("#slider1").sliderResponsive({
     slidePause: 5000,
-    fadeSpeed: 800,
+    fadeSpeed: 8000,
     autoPlay: "on",
     showArrows: "off", 
     hideDots: "off", 

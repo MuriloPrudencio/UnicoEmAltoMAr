@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: .9;
   }
    
   header.header nav.nav button.btn-mobile {
@@ -28,12 +27,12 @@
     display: block;
     padding: 0.5rem;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffff;
   }
   
   header.header nav.nav ul.menu a:hover {
-    background: rgba(0, 0, 0, 0.2);
+    opacity: .95;
     color: #ffffff;
   }
   
@@ -51,11 +50,18 @@
   }
 
   a.btn-style{
-    padding: 1.5em .5em!important;
+    width: 150px;
+    height: 75px;
+    padding-top: 1.8em!important;
     background-color: #c1ad85;
     border-radius: 0px!important;
     text-align: center;
- 
+  }
+
+  a.btn-style img{
+    position: absolute;
+    top: .2em;
+    left: 45%;
   }
 
   /*Criando medias para respoonsividade*/
