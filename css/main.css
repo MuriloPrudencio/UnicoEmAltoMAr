@@ -1,0 +1,1222 @@
+@import url("https://use.typekit.net/trw4fiv.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff5e0;
+    font-family: 'montserrat-alternates', 'sans-serif';
+}
+
+/*Slider*/
+.slider, 
+.slider > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 850px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff5e0;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+}
+
+.slider > div {
+    position: absolute;
+}
+
+.slider > i {
+    color: #5bbd72;
+    position: absolute;
+    font-size: 60px;
+    margin: 20px;
+    top: 40%;
+    text-shadow: 0 10px 2px #223422;
+    transition: .3s;
+    width: 30px;
+    padding: 10px 13px;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: content-box;
+    border-radius: 3px;
+    z-index: 4;
+}
+
+.slider > i svg {
+    margin-top: 3px;
+}
+
+.slider > .left {
+    left: -100px;
+}
+.slider > .right {
+    right: -100px;
+}
+.slider:hover > .left {
+    left: 0;
+}
+.slider:hover > .right {
+    right: 0;
+}
+
+.slider > i:hover {
+    background:#fff;
+    background: rgba(255, 255, 255, .8);
+    transform: translateX(-2px);
+}
+
+.slider > i.right:hover {
+    transform: translateX(2px);
+}
+
+.slider > i.right:active,
+.slider > i.left:active {
+    transform: translateY(1px);
+}
+
+.slider:hover > div {
+    transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+    transform: scale(1);
+}
+
+.slider > ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.slider > ul > li {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider > .show {
+    z-index: 1;
+}
+
+.hideDots > ul {
+    display: none;
+}
+
+.showArrows > .left {
+    left: 0;
+}
+
+.showArrows > .right {
+    right: 0;
+}
+
+.titleBar {
+    z-index: 2;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 20px 30px;
+    transition: .3s;
+    color: #fff;
+}
+
+.titleBar * {
+    transform: translate(-20px, 30px);
+    transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+    opacity: 0;
+}
+
+.titleBarTop .titleBar * {
+    transform: translate(-20px, -30px);
+}
+
+.slider:hover .titleBar,
+.slider:hover .titleBar * {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.titleBarTop .titleBar {
+    top: 0;
+    bottom: initial;
+    transform: translateY(-100%);
+}
+
+.slider > div span {
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+@keyframes boing {
+    0% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(.6);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*Container atrações*/
+.atracoes-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 10em;
+    text-align: justify;
+    line-height: 1.1em
+}
+
+.atracoes-container div {
+    width: 25%;
+}
+
+.atracoes-container div.atracoes h2 {
+    color: #143b62;
+    padding: 0.3em 0em;
+}
+
+.atracoes-container div.atracoes span {
+    padding-bottom: 2em!important;
+    color: #c4c4c4;
+    font-style: italic;
+}
+
+.atracoes-container div.atracoes span {
+    font-weight: 900;
+    position: relative;
+    bottom: -15px;
+    color: #143b62;
+    font-size: 2em;
+    
+}
+
+.atracoes-container div.atracoes p  {
+    text-align: justify;
+    text-indent: 1em;
+    color: #ffffff;
+}
+
+.atracoes-container div figure img {
+    position: relative;
+    bottom: 7.5em;
+    z-index: 5;
+}
+
+/*Background msc*/
+.background > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+
+    display: block;
+    width: 100%;
+    height: 1500px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff5e0;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+    opacity: .8;
+
+}
+
+.background div.title {
+    text-align: start;
+    margin-top: 32%;
+}
+
+.background div.title h2 {
+    color: #143b62;
+    font-weight: 600;
+    font-size: 3.5em;
+    text-shadow: 0.0em 0.0em 0.05em rgb(85, 84, 84)
+}
+
+.background div.title p {
+    color: #c1ad85;
+    font-style: italic;
+    font-size: 1em;
+    padding-bottom: 1.5em;
+    text-shadow: 0.0em 0.1em 0.2em black
+}
+
+.background a.btn {
+    background-color: #c1ad85;
+    padding: .5em 1em;
+    color: #143b62;
+}
+
+.background a.btn:hover {
+    background-color: #ce944d;
+    color: #ffffff;
+}
+
+.background .back-apresentacao {
+    margin: 15% 3%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.background .back-apresentacao p {
+    color: #c1ad85;
+    font-weight: 400;
+    text-shadow: 0.2em 0.2em 0.3em black
+}
+
+.background .back-apresentacao h3 {
+    margin: .5em 0em;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 2em;
+}
+
+.background .back-apresentacao p  {
+   width: 90%;
+}
+
+/*Container restaurante*/
+.rest-container {
+    margin: 5% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rest-container figure {
+    width: 30%;
+}
+
+.rest-container figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rest-content {
+    width: 500px;
+}
+
+.rest-content h3 {
+    color: #143b62;
+    padding: 1em 0em;
+}
+
+.rest-content p {
+    color: #143b62;
+    text-align: justify;
+}
+
+/*Video suprema*/
+.video-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.apresentacao-title h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #143b62;
+    padding: 1.5em 0em;
+}
+
+.apresentacao-video {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apresentacao-video {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #c4c4c4;
+}
+
+.video {
+    text-align: center;
+    margin: 5% 0%;
+}
+
+/*msc fantasia*/
+.msc > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin: 5% 0%;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+    opacity: .6;
+}
+
+.msc p {
+    font-size: 1.5em;
+    color: #143b62;
+    padding: .5em 1em;
+    width: 250px;
+    background-color: #000;
+    font-weight: bold;
+    margin-top: 210px;
+    opacity: .7;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.msc-apresentacao {
+    margin: 5% 5%;
+}
+
+.msc-apresentacao .msc-title h3{
+   font-size: 1.2em;
+   color: #143b62;
+   text-align: center;
+   padding-bottom: 3em;
+}
+
+.jorge-mateus-container{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: 400px;
+    text-align: justify;
+}
+
+.jorge-mateus-container h3 {
+    color: #143b62;
+}
+
+.msc-apresentacao .msc-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.msc-apresentacao .msc-content h4{
+    text-align: center;
+    color: #143b62;
+}
+
+.msc-apresentacao .msc-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: #143b62;
+    
+}
+
+/*msc design*/
+
+.msc-design {
+    width: 100vw;
+    height: 250px;
+    background-color: #143b62;
+    text-align: center;
+    padding: 2.8% 10%;
+}
+
+.msc-design h3 {
+    font-size: 2em;
+    padding-bottom: .5em;
+	color: #fff5e0;
+}
+
+.msc-design p {
+    font-size: 1.2em;
+    color: #c1ad85;
+}
+
+.design-imgs {
+    display: flex;
+}
+
+.design-imgs div.recepcao,
+.design-imgs div.catalano,
+.design-imgs div.cabines,
+.design-imgs div.magrome,
+.design-imgs div.spa,
+.design-imgs div.academia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: #ffffff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.design-imgs div.recepcao p,
+.design-imgs div.catalano p,
+.design-imgs div.cabines p,
+.design-imgs div.magrome p,
+.design-imgs div.spa p,
+.design-imgs div.academia p{
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.none {
+    display: none;
+}
+
+.design-imgs > .recepcao,
+.design-imgs > .catalano,
+.design-imgs > .cabines,
+.design-imgs > .magrome,
+.design-imgs > .spa,
+.design-imgs > .academia
+{
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 250px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #143b62;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s; 
+}
+
+/*msc-intretenimento*/
+.msc-intretenimento {
+    width: 100vw;
+    height: 250px;
+    background-color: #c1ad85;
+    text-align: center;
+    padding: 2.8% 10%;
+}
+
+.msc-intretenimento h3 {
+    color: #fff5e0;
+    font-size: 2em;
+    padding-bottom: .5em;
+}
+
+.msc-intretenimento p {
+    font-size: 1.2em;
+    color: #143b62;
+}
+
+.intretenimento-imgs {
+    display: flex;
+}
+
+.intretenimento-imgs  div.teatro,
+.intretenimento-imgs  div.cassino,
+.intretenimento-imgs  div.f1,
+.intretenimento-imgs  div.cinema,
+.intretenimento-imgs  div.teen,
+.intretenimento-imgs  div.baby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: #ffffff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.intretenimento-imgs div.teatro p,
+.intretenimento-imgs div.cassino p,
+.intretenimento-imgs div.f1 p,
+.intretenimento-imgs div.cinema p,
+.intretenimento-imgs div.teen p,
+.intretenimento-imgs div.baby p{
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.intretenimento-imgs > .teatro,
+.intretenimento-imgs > .cassino,
+.intretenimento-imgs > .f1,
+.intretenimento-imgs > .cinema,
+.intretenimento-imgs > .teen,
+.intretenimento-imgs > .baby
+{
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 250px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #c1ad85;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;   
+}
+
+/*msc-restaurantes*/
+
+.msc-restaurantes {
+    width: 100vw;
+    height: 250px;
+    background-color: #fff5e0;
+    text-align: center;
+    padding: 2.8% 10%;
+}
+
+.msc-restaurantes h3 {
+    color: #143b62;
+    font-size: 2em;
+    padding-bottom: .5em;
+}
+
+.msc-restaurantes p {
+    font-size: 1.2em;
+    color: #143b62;
+}
+
+.restaurantes-imgs {
+    display: flex;
+}
+
+.restaurantes-imgs div.velvet,
+.restaurantes-imgs div.doro,
+.restaurantes-imgs div.butcher,
+.restaurantes-imgs div.letoile,
+.restaurantes-imgs div.sports,
+.restaurantes-imgs div.piazza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: #ffffff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.restaurantes-imgs div.velvet p,
+.restaurantes-imgs div.doro p,
+.restaurantes-imgs div.butcher p,
+.restaurantes-imgs div.letoile p,
+.restaurantes-imgs div.sports p,
+.restaurantes-imgs div.piazza p{
+    padding: 0px 20px;
+    text-align: justify;
+}
+
+.restaurantes-imgs > .velvet,
+.restaurantes-imgs > .doro,
+.restaurantes-imgs > .butcher,
+.restaurantes-imgs > .letoile,
+.restaurantes-imgs > .sports,
+.restaurantes-imgs > .piazza
+{
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 250px;
+    /* height: 100vh; *//* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #143b62;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;   
+}
+
+
+#compre-online {
+    margin-top: 2%;
+}
+
+#compre-online figure {
+    margin: 0 auto!important;
+    width: 50%;
+}
+
+#compre-online figure img{
+    width: 100%;
+}
+
+.content-border {
+    margin: 0 auto;
+    width: 125px;
+    height: 40px;
+    border: 2px solid #143b62
+}
+
+/*contador regressivo*/
+.block-garanta {
+    position: relative;
+    left: 45%;
+    top: 8em;
+    background-color: #c1ad85;
+    width: 250px;
+    padding-top: 1em;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.conteiner-countdown{
+    margin: 0% 0%;
+    position: relative;
+    top: 7em;
+    z-index: 2;
+}
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 300px));
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+}
+  
+.countdown li {
+    font-family: "Poppins", Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    padding: 1rem;
+    color: #c1ad85;
+    background: #143b62;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+  
+.countdown li span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+/*slide show cabine*/
+.slider-container,
+.container-tour {
+    margin: 5% 0%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+}
+
+.slider-wrapper{
+    width: 700px;
+    height: 400px;
+    box-shadow: 1px 1px 6px #143b62;
+    position: relative;
+}
+.slider-wrapper img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.slider-text {
+    width: 500px;
+    line-height: 1.2em;
+}
+
+.slider-text h3 {
+    color: #143b62;
+}
+
+.slider-text p {
+    color: #143b62;
+    text-align: justify;
+    margin: -1.3% 0%;
+    text-indent: 1em;
+}
+
+.slider-text span {
+    position: relative;
+    bottom: -8px;
+    color: #143b62;
+    font-size: 3em;
+}
+
+/*tour*/
+
+/*compre*/
+.compre {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -1%;
+}
+
+.compre figure {
+    width: 250px;
+    height: 100px;
+}
+
+.compre figure a img {
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.compre figure a img:hover {
+    -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+/*info*/
+.container-info{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.intinerario {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.btn-download {
+    line-height: 5em;
+    background-color: #c1ad85;
+    color: #143b62;
+    padding: 1em 2em;
+    border-radius: 10px;
+}
+
+.btn-download:hover{
+    background-color: #143b62;
+    color: #c1ad85;
+}
+
+.toTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    bottom: 15px;
+    right: 35px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #143b62;
+    text-decoration: none;
+}
+.toTop::after {
+    content: "COMPRE EM 10x SEM JUROS";
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    transition: margin-top 250ms;
+}
+.toTop:hover::after {
+    margin-top:-8px;
+    color: #ffffff;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    right: 200px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+/*responsivo*/
+@media only screen and (max-width: 1351px){
+    .atracoes {
+        width: 50%!important;
+    }
+
+    .atracoes-container div figure {
+        width: 300px;
+        height: 550px;
+        display: none;
+    }
+
+    
+
+    .slider-container,
+    .container-tour {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1235px) {
+    .atracoes-container div figure{
+        display: none;
+    }
+
+    .atracoes-container div {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .slider, 
+    .slider > div{
+        height: 450px;
+    }
+
+    .atracoes-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        justify-content:center ;
+        align-items: center;
+        padding: 1em 2em;
+    }
+
+    .atracoes-container div {
+        width: 80%;
+    }
+
+    .msc-content {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .design-imgs,
+    .intretenimento-imgs,
+    .restaurantes-imgs {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .design-imgs > .recepcao,
+    .design-imgs > .catalano,
+    .design-imgs > .cabines,
+    .design-imgs > .magrome,
+    .design-imgs > .spa,
+    .design-imgs > .academia,
+    .intretenimento-imgs > .teatro,
+    .intretenimento-imgs > .cassino,
+    .intretenimento-imgs > .f1,
+    .intretenimento-imgs > .cinema,
+    .intretenimento-imgs > .teen,
+    .intretenimento-imgs > .baby,
+    .restaurantes-imgs > .velvet,
+    .restaurantes-imgs > .doro,
+    .restaurantes-imgs > .butcher,
+    .restaurantes-imgs > .letoile,
+    .restaurantes-imgs > .sports,
+    .restaurantes-imgs > .piazza {
+        width: 100%;
+        height: 500px;   
+    }
+}
+
+@media only screen and (max-width: 955px) {
+    .video iframe {
+        width: 640px;
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .background div.title h2{
+        font-size: 2em;
+    }
+    .background .back-apresentacao{
+        margin: 5% auto;
+        flex-direction: column;
+        width: 80%;
+        align-items: center!important;
+    }
+
+    .msc-design{
+        height: 450px!important;
+    }
+    .msc-intretenimento {
+        height: 300px;
+    }
+
+    .slider-container iframe,
+    .container-tour iframe{
+        margin: 0% auto;
+        width: 600px;
+        height: 400px;
+        
+    }
+
+    .compre {
+        flex-direction: column;
+        align-items: center;
+        gap: 10em;
+    }
+
+    .container-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intinerario {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .intinerario div#text {
+        margin-top: 5%!important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .slider, 
+    .slider > div{
+        height: 300px;
+    }
+
+    .titleBar {
+        height: 40px;
+        font-size: 15px;
+        padding: 0px 20px;    
+    }
+
+    .slider > i {
+        width: 20px;
+        height: 30px;
+    }
+
+    .apresentacao-title h3 {
+        font-size: 1em;
+    }
+
+    .apresentacao-video p {
+        font-size: .9em;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .atracoes {
+        width: 80%!important;
+    }
+
+    .video iframe {
+        width: 100%;
+        
+    }
+
+    .slider-container iframe,
+    .container-tour iframe{
+        margin: 0% auto;
+        width: 500px;
+    }
+
+    .toTop{
+    bottom: 10px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    }
+
+    .toTop::after {
+        font-size: 10px;
+    }
+
+    .whatsapp-link {
+        right: 135px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fa-whatsapp {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .apresentacao-title h3 {
+        font-size: .8em;
+    }
+
+    .apresentacao-video p {
+        font-size: .5em;
+    }
+
+    .msc-intretenimento,
+    .msc-restaurantes {
+        height: 400px!important;
+    }
+
+    .design-imgs > .recepcao,
+    .design-imgs > .catalano,
+    .design-imgs > .cabines,
+    .design-imgs > .magrome,
+    .design-imgs > .spa,
+    .design-imgs > .academia,
+    .intretenimento-imgs > .teatro,
+    .intretenimento-imgs > .cassino,
+    .intretenimento-imgs > .f1,
+    .intretenimento-imgs > .cinema,
+    .intretenimento-imgs > .teen,
+    .intretenimento-imgs > .baby,
+    .restaurantes-imgs > .velvet,
+    .restaurantes-imgs > .doro,
+    .restaurantes-imgs > .butcher,
+    .restaurantes-imgs > .letoile,
+    .restaurantes-imgs > .sports,
+    .restaurantes-imgs > .piazza
+     {
+        width: 100%;
+        height: 350px;   
+    }
+
+    .slider-wrapper{
+        width: 500px;
+        height: 200px;
+    }
+
+    .slider-text{
+        width: 350px;
+    }
+
+    .slider-container iframe,
+    .container-tour iframe{
+        margin: 0% auto;
+        width: 400px;
+    }
+
+    #info,
+    #info-bord {
+        margin-top: 10%;
+        margin-bottom: -25%;
+    }
+
+    #info-itinerario {
+        margin-top: 35%!important;
+        margin-bottom: 15%!important;
+    }
+
+    .compre {
+        margin-top: -5%!important;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .slider, 
+    .slider > div{
+        height: 250px;
+    }
+
+    .msc p {
+        font-size: .9em;
+        color: #143b62;
+        padding: .5em 1em;
+        width: 150px;
+        margin-top: 225px;
+        
+    }
+
+    
+}
+
+@media only screen and (max-width: 465px) {
+    .slider-container iframe,
+    .container-tour iframe{
+        margin: 0% 0%;
+        width: 320px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .msc-design {
+        height: 500px!important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .slider, 
+    .slider > div{
+        height: 200px;
+    }
+}
+

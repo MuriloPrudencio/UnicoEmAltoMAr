@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/cropped-Suprema-Logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <title>Jorge e Mateus em Alto Mar</title>
+  </head>
+  <body>
+    <header class="header">
+        <a class="logo" href="https://supremapoker.com.br/">
+          <img style="width: 200px" src="./img/LOGO.png"/>
+        </a>
+        
+
+      <!--(aria-expanded => se expande algum conteudo ou não )
+       Iniciando com falso, quer dizer que temos uma áre mas não
+        esta expandida, que o conteudo de dentor não está a mostra
+        Foi criado no Javascript para mapear de forma dinamica, se estara
+        ativado ou não..  
+        (aria-controls => Mostra para o leitor de tela qual area ele controla)
+        Passando como parêmtro a class da nossa UL que é MENU, 
+        detsa forma o leitor de tela irá entender que o BUTTON MOBILE, controla a 
+        área do menu navegacional mobile..
+        (aria-haspopup => indica que nessa ara tem um elemento popup)
+        setando como TRUE mostra ao leitor que tem conteudo..
+        Mostrando para o leitor que ao cliclar no elemento BTN MOBILE outro elemento
+        abre.
+        (aria-label => É uma mensagem que o leitor de tela ira ler para o usuário)
+        Nesse caso o leitor irá ler para o usuário Abrir Menu..
+        Foi criado no Javascript uma condicional, para que se estiver aberto o menu,
+        o leitor leia a seguinte frase "Fechar menu", e se estiver fechado "Abrir menu"
+        tudo dinamicamente.
+        (role => é o atributo para mostrar qual é a função da UL para o leitor de tela)
+        Nesse caso irá ter a propriedade MENU, propriedade padrão a ser usada..
+        -->
+
+      <!--Onde ficará todo o menu navegacional-->
+      <nav class="nav">
+        <!--Criando o Hamburguer-->
+        <button
+          class="btn-mobile"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburguer"></span>
+        </button>
+        <ul class="menu" role="menu">
+          <li><a href="#on-board">ON BOARD</a></li>
+          <li><a href="#msc-fantasia">COSTA FIRENZE</a></li>
+          <li><a href="#informacoes-cabine">CABINES</a></li>
+          <li>
+            <img style="width: 25px ;" src="/img/icon-compra.png"/>
+          <a class="btn-style" href="#compre-online">
+             COMPRE AGORA
+          </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <div class="slider" id="slider1">
+      <div style="background-image:url(/img/BANNER_1.png)"></div>
+
+      <i class="left" class="arrows" style="z-index:2; background-color: #0d263f; opacity: 0.5; position:absolute;"><svg viewBox="0 0 100 100">
+        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+      </svg></i>
+      <i class="right" class="arrows" style="z-index:2; position:absolute; background-color: #0d263f; opacity: 0.5;"><svg viewBox="0 0 100 100">
+        <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+      </svg></i>
+      <span class="titleBar">
+        <h1 style="color: #fff5e0 ;">JORGE & MATEUS.</h1>
+      </span>
+    </div>
+
+    
+    <main>
+      <div id="on-board"></div>
+    </main>
+
+    <section class="video-container" >
+      <div class="video">
+        <iframe width="853" height="480" style="border: 1px solid #efa144 ; border-radius: 10px" src="https://www.youtube.com/embed/z-XxedqPsqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="jorge-mateus-container">
+        <div  class="msc-title">
+          <h3>A MAIOR VIAGEM DE TODOS OS TEMPOS AO LADO DA DUPLA MAIS AMADA DO BRASIL</h3>
+        </div>
+        <div class="msc-content">
+          <div class="content">
+            <p style="width: 300px ;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="block-garanta">
+      <h3 style="color: #0d263f;">GARANTA SUA CABINE</h3>
+    </div>
+
+    <section class="conteiner-countdown">
+      <ul class="countdown">
+        <li>
+          <span data-time></span>
+          <div>dia(s)</div>
+        </li>
+        <li>
+          <span data-time></span>
+          <div>hora(s)</div>
+        </li>
+        <li>
+          <span data-time></span>
+          <div>min.</div>
+        </li>
+        <li>
+          <span data-time></span>
+          <div>sec.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="background">
+      <div style="background-image:url(/img/BASE_NAVIO.png); opacity: 0.8;">
+        <div style="margin-left: 15%;" class="title">
+          <h2 style="color: #fff;">COSTA FRIENZE</h2>
+          <a class="btn" href="#msc-fantasia">CONHEÇA O NAVIO</a>
+        </div>
+        <div class="back-apresentacao">
+          <div>
+            <h3>DESIGN</h3>
+            <p>Combinando o calor e o conforto do ambiente mediterrânico com o design de última geração.</p>
+          </div>
+          <div>
+            <h3>ALL INCLUSIVE</h3>
+            <p>Combinando o calor e o conforto do ambiente mediterrânico com o design de última geração.</p>
+          </div>
+          <div>
+            <h3>SHOWS</h3>
+            <p>Combinando o calor e o conforto do ambiente mediterrânico com o design de última geração.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="rest-container">
+        <figure>
+          <img src="/img/Academia-Sombra.jpg"/>
+        </figure>
+        <div class="rest-content">
+          <h3>
+            EMBARQUE COM A MAIOR DUPLA DO BRASIL
+          </h3>
+          <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</P>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="rest-container">
+        <div class="rest-content">
+          <h3>
+            EMBARQUE COM A MAIOR DUPLA DO BRASIL
+          </h3>
+          <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</P>
+        </div>
+        <figure>
+          <img src="/img/Academia-Sombra.jpg"/>
+        </figure>
+      </div>
+    </section>
+
+    <section class="msc-design">
+      <h3>DESIGN</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </section>
+
+    <section class="design-imgs">
+      <div class="recepcao" style="background-image:url(https://naviozcl.com.br/wp-content/uploads/2021/12/recepc%CC%A7a%CC%83o.jpg)">
+        <img class="recepcao-img"style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="recepcao-text">RECEPÇÃO</p>
+      </div>
+      <div class="catalano" style="background-image:url(/img/catalano.jpg)">
+        <img class="catalano-img" style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="catalano-text">CATALANO</p>
+      </div>
+      <div class="cabines" style="background-image:url(https://naviozcl.com.br/wp-content/uploads/2021/12/suíte.jpg)">
+        <img class="cabines-img" style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="cabines-text">CABINES</p>
+      </div>
+      <div class="magrome" style="background-image:url(/img/magrome-1.jpg)">
+        <img class="magrome-img" style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="magrome-text"> AQUA PARK E IL TROPICI</p>
+      </div>
+      <div class="spa" style="background-image:url(/img/SPA-Sombra.jpg)">
+        <img class="spa-img" style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="spa-text">MSC AUREA SPA</p>
+      </div>
+      <div class="academia" style="background-image:url(/img/Academia-Sombra.jpg)">
+        <img class="academia-img" style="width: 37px ;" src="./img/anchor-solid.svg"/>
+        <p class="academia-text">ACADEMIA</p>
+      </div>
+    </section>
+
+    <section class="msc-intretenimento">
+      <h3>ENTRETENIMENTO</h3>
+      <p>O entretenimento variado a bordo do MSC Fantasia inclui música ao vivo, o luxuoso Casinò delle Palme, a panorâmica Liquid Disco e o futurista teatro L'Avanguardia, e, para quem gosta de aventura, o emocionante MSC Formula Racer e cinema 4D.</p>
+    </section>
+
+    <section class="intretenimento-imgs">
+      <div class="teatro" style="background-image:url(/img/teatro.jpg)">
+        <img class="teatro-img"style="width: 37px ;" src="./img/music-solid.svg"/>
+        <p class="teatro-text">TEATRO I'AVAGUARDIA</p>
+      </div>
+      <div class="cassino" style="background-image:url(/img/casinoFantasia.jpg)">
+        <img class="cassino-img" style="width: 37px ;"  src="./img/music-solid.svg"/>
+        <p class="cassino-text">CASSINO DELLE PALME</p>
+      </div>
+      <div class="f1" style="background-image:url(/img/f1.jpg)">
+        <img class="f1-img" style="width: 37px ;"  src="./img/music-solid.svg"/>
+        <p class="f1-text">MSC FORMULA RACER</p>
+      </div>
+      <div class="cinema" style="background-image:url(/img/4d.jpg)">
+        <img class="cinema-img" style="width: 37px ;"  src="./img/music-solid.svg"/>
+        <p class="cinema-text"> CINEMA 4D</p>
+      </div>
+      <div class="teen" style="background-image:url(/img/teen.jpg)">
+        <img class="teen-img" style="width: 37px ;"  src="./img/music-solid.svg"/>
+        <p class="teen-text">GRAFFITI'S TEENS CLUB</p>
+      </div>
+      <div class="baby" style="background-image:url(/img/IlPolo.jpg)">
+        <img class="baby-img" style="width: 37px ;"  src="./img/music-solid.svg"/>
+        <p class="baby-text">BABY CLUB - II POLO NORD</p>
+      </div>
+    </section>
+
+    <section class="msc-restaurantes">
+      <h3>RESTAURANTES, BARES E LOUNGES</h3>
+      <p>Os restaurantes oferecem experiências gastronômicas inesquecíveis, desde o grandioso Il Cerchio d'Oro e o íntimo Red Velvet, com seus lustres de vidro de Murano, até o Butcher's Cut, sem esquecer o L'Etoile, dedicado aos hóspedes do MSC Yacht Club.</p>
+    </section>
+
+    <section style="margin-bottom: 5% ;" class="restaurantes-imgs">
+      <div class="velvet" style="background-image:url(/img/velvet.jpg)">
+        <img class="velvet-img"style="width: 37px ;" src="./img/martini-glass-solid.svg"/>
+        <p class="velvet-text">RED VELVET</p>
+      </div>
+      <div class="doro" style="background-image:url(/img/oro.jpg)">
+        <img class="doro-img" style="width: 37px ;"  src="./img/martini-glass-solid.svg"/>
+        <p class="doro-text">IL CERCHIO D'ORO</p>
+      </div>
+      <div class="butcher" style="background-image:url(/img/butchers.jpg)">
+        <img class="butcher-img" style="width: 37px ;"  src="./img/martini-glass-solid.svg"/>
+        <p class="butcher-text">BUTCHER'S CUT</p>
+      </div>
+      <div class="letoile" style="background-image:url(/img/letoile.jpg)">
+        <img class="letoile-img" style="width: 37px ;"  src="./img/martini-glass-solid.svg"/>
+        <p class="letoile-text">L'ETOILE</p>
+      </div>
+      <div class="sports" style="background-image:url(/img/sports.jpg)">
+        <img class="sports-img" style="width: 37px ;"  src="./img/martini-glass-solid.svg"/>
+        <p class="sports-text">SPORTS BAR</p>
+      </div>
+      <div class="piazza" style="background-image:url(/img/piazza.jpg)">
+        <img class="piazza-img" style="width: 37px ;"  src="./img/martini-glass-solid.svg"/>
+        <p class="piazza-text">PIZZA SAN GIORGIO</p>
+      </div>
+    </section>
+    
+    
+  
+
+    <section id="info-itinerario">
+      <div class="content-border"></div>
+      <div style="margin-top: 5% ;" class="intinerario">
+          <img style="border-radius: 5px;" src="/img/UR59.png"/>
+        <div id="text" class="slider-text" style="margin-top: -1% ;">
+          <span>.</span><p> Dia 1 - Santos - Embarque | Saída: 18:00H</p>
+          <span>.</span><p> Dia 2 - Navegando</p>
+          <span>.</span><p> Dia 3 - Búzios - Chegada: 08:00H | Saída: 16:00H *</p>
+          <span>.</span><p> Dia 4 - Santos - Chegada: 07:00H</p>
+          <span style="color:#c1ad85 ;position: relative; top: 25px!important; font-size: 2em;">*</span><p style="color: #c1ad85 ; font-style: italic;"> Não Haverá desembarque.</p>
+          <a class="btn-download" download="Ficha tecnica MSC-Fantasia" href="/img/MSC-ficha-tecnica.pdf">Ficha Técnica MSC-Fantasia*</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="compre-online">
+      <figure style="margin-bottom: 2%;">
+        <img src="/img/COMPRE.png"/>
+      </figure>
+      <figure style="margin-bottom: 2%;">
+        <img src="/img/garantaja.png"/>
+      </figure>
+      <div style="margin-top: 2%;" class="compre">
+        <figure style="width: 300px; height: 200px;">
+          <a href="https://pagamento.baladapp.com.br/carrinho-externo?payload=eyJhbnVuY2lvX2lkIjozMDU5LCJvIjpbeyJpZCI6NjI1MDAsIm4iOjF9XX0=" target="_blank">
+            <img  src="/img/COMPRA_DUPLA.png" alt="">
+          </a>
+        </figure>
+        <figure style="width: 300px; height: 200px;">
+          <a href="https://pagamento.baladapp.com.br/carrinho-externo?payload=eyJhbnVuY2lvX2lkIjozMDU5LCJvIjpbeyJpZCI6NjI1MDIsIm4iOjF9XX0=" target="_blank">
+            <img  src="/img/COMPRA_TRIPLA.png" alt="">
+          </a>
+        </figure>
+        <figure style="width: 300px; height: 200px;">
+          <a href="https://pagamento.baladapp.com.br/carrinho-externo?payload=eyJhbnVuY2lvX2lkIjozMDU5LCJvIjpbeyJpZCI6NjI1MDQsIm4iOjF9XX0=" target="_blank">
+            <img  src="/img/COMPRA_QUADRUPLA.png" alt="">
+          </a>
+        </figure>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <p>ÚNICO EM ALTO MAR <span>&copy 2022</span></p>
+    </footer>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="./js/slide.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script src="/js/nav.js"></script>
+</html>

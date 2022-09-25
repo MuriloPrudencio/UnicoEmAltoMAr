@@ -1,0 +1,141 @@
+  header.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 90px;
+    padding: 1rem;
+    background-color: #143b62;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .9;
+  }
+   
+  header.header nav.nav button.btn-mobile {
+    display: none;
+  }
+  
+  header.header nav.nav ul.menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  header.header nav.nav ul.menu a {
+    position: relative;
+    top: 1.7em;
+    display: block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  header.header nav.nav ul.menu a:hover {
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 10%;
+    color: #ffffff;
+    background-color: #143b62;
+    padding: 1em 0em;
+	
+  }
+
+  .footer span {
+    color: #ffffff;
+  }
+
+  a.btn-style{
+    padding: 1.5em .5em!important;
+    background-color: #c1ad85;
+    border-radius: 0px!important;
+    text-align: center;
+ 
+  }
+
+  /*Criando medias para respoonsividade*/
+  
+  @media only screen and (max-width: 1150px) {
+    header.header nav.nav button.btn-mobile {
+      display: flex;
+      padding: 0.5rem 2rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  
+    header.header nav.nav button.btn-mobile span.hamburguer {
+      width: 30px;
+      border-top: 3px solid;
+      color: #ffffff;
+    }
+  
+    header.header nav.nav button.btn-mobile span.hamburguer::after {
+      display: block;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    header.header nav.nav button.btn-mobile span.hamburguer::before {
+      display: block;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    header.header nav.active button.btn-mobile span.hamburguer {
+      border-top-color: transparent;
+    }
+  
+    header.header nav.active button.btn-mobile span.hamburguer::before {
+      transform: rotate(135deg);
+    }
+  
+    header.header nav.active button.btn-mobile span.hamburguer::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  
+    header.header nav.nav ul.menu {
+      display: block;
+      visibility: hidden;
+      position: absolute;
+      width: 100%;
+      height: 0px;
+      top: 70px;
+      left: 0;
+      background-color: #143b62;
+      z-index: 10;
+      transition: 0.6s;
+      overflow-y: hidden;
+    }
+  
+    header.header nav.nav ul.menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+    }
+  
+    header.header nav.nav ul.menu a:hover {
+      border-bottom: 1px solid #000;
+    }
+  
+    header.header nav.active ul.menu {
+      height: calc(80vh - 70px);
+      visibility: visible;
+    }
+  }
