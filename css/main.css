@@ -252,15 +252,13 @@ body {
     z-index: 5;
 }
 
-/*Background msc*/
+/*Background firenze*/
 .background > div {
-    /* Images default to Center Center. Maybe try 'center top'? */
     background-position: center center;
-
     display: block;
     width: 100%;
     height: 900px;
-    /* height: 100vh; *//* If you want fullscreen */
+    
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,8 +268,6 @@ body {
     -o-transition: transform .4s;
     -webkit-transition: transform .4s;
     transition: transform .4s;
-    opacity: .8;
-
 }
 
 .background div.title {
