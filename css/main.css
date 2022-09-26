@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/trw4fiv.css");
+
+
 *{
     margin: 0;
     padding: 0;
@@ -680,7 +682,7 @@ body {
 .compre-on figure{
     margin-top: 5%!important;
     margin-bottom: 5%!important;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
 }
 
