@@ -13,7 +13,7 @@ leitor de tela que essa area esta expandida, e o seu conteudo..
 */
 
 btnMobile.addEventListener("click", (e) => {
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav-head");
   nav.classList.toggle("active");
 
   const active = nav.classList.contains("active");
@@ -27,7 +27,7 @@ btnMobile.addEventListener("click", (e) => {
 });
 
 btnMobile.addEventListener("touchstart", (e) => {
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav-head");
   nav.classList.toggle("active");
 
   if (e.type === "touchstart") {

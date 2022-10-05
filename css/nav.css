@@ -69,7 +69,7 @@
   /*Criando medias para respoonsividade*/
   
   @media only screen and (max-width: 1150px) {
-    header.header nav.nav button.btn-mobile {
+    header.header nav.nav-head button.btn-mobile {
       display: flex;
       padding: 0.5rem 2rem;
       font-size: 1rem;
@@ -78,13 +78,13 @@
       cursor: pointer;
     }
   
-    header.header nav.nav button.btn-mobile span.hamburguer {
+    header.header nav.nav-head button.btn-mobile span.hamburguer {
       width: 30px;
       border-top: 3px solid;
       color: #ffffff;
     }
   
-    header.header nav.nav button.btn-mobile span.hamburguer::after {
+    header.header nav.nav-head button.btn-mobile span.hamburguer::after {
       display: block;
       content: "";
       width: 30px;
@@ -95,7 +95,7 @@
       position: relative;
     }
   
-    header.header nav.nav button.btn-mobile span.hamburguer::before {
+    header.header nav.nav-head button.btn-mobile span.hamburguer::before {
       display: block;
       content: "";
       width: 30px;
@@ -119,7 +119,7 @@
       top: -7px;
     }
   
-    header.header nav.nav ul.menu {
+    header.header nav.nav-head ul.menu {
       display: block;
       visibility: hidden;
       position: absolute;
@@ -133,12 +133,12 @@
       overflow-y: hidden;
     }
   
-    header.header nav.nav ul.menu a {
+    header.header nav.nav-head ul.menu a {
       padding: 1rem 0;
       margin: 0 1rem;
     }
   
-    header.header nav.nav ul.menu a:hover {
+    header.header nav.nav-head ul.menu a:hover {
       border-bottom: 1px solid #000;
     }
   
