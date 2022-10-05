@@ -12,16 +12,16 @@
     justify-content: space-between;
   }
    
-  header.header nav.nav button.btn-mobile {
+  header.header nav.nav-head button.btn-mobile {
     display: none;
   }
   
-  header.header nav.nav ul.menu {
+  header.header nav.nav-head ul.menu {
     display: flex;
     gap: 1.5rem;
   }
   
-  header.header nav.nav ul.menu a {
+  header.header nav.nav-head ul.menu a {
     position: relative;
     top: 1.7em;
     display: block;
@@ -31,9 +31,10 @@
     color: #ffffff;
   }
   
-  header.header nav.nav ul.menu a:hover {
+  header.header nav.nav-head ul.menu a:hover {
     opacity: .95;
     color: #ffffff;
+    border-bottom: 2px solid #c1ad85;
   }
   
   .footer {

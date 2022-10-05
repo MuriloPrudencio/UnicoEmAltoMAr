@@ -42,7 +42,7 @@
         -->
 
       <!--Onde ficará todo o menu navegacional-->
-      <nav class="nav">
+      <nav class="nav-head">
         <!--Criando o Hamburguer-->
         <button
           class="btn-mobile"
@@ -58,7 +58,7 @@
           <li><a href="#costa-firenze">COSTA FIRENZE</a></li>
           <li><a href="#informacoes">INFORMAÇÕES</a></li>
           <li>
-          <a class="btn-style" href="#compre-online">
+          <a class="btn-style" style="border-bottom: none ;" href="#compre-online">
             <img style="width: 20px;" src="/img/ancora-icon.png"/>
              COMPRE AGORA
              
@@ -87,7 +87,7 @@
 
     <section class="video-container" >
       <div class="video">
-        <iframe width="853" height="480" style="border: 1px solid #0d263f ; border-radius: 10px" src="img/UNICO_EM_ALTO_MAR_00001_wide.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="853" height="480" style="border: 1px solid #0d263f ; border-radius: 10px" src="img/UnicoEMAltoMar.mp4" title="YouTube video player" frameborder="0" allow="muted,accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="jorge-mateus-container">
         <div  class="msc-title">
@@ -265,53 +265,74 @@
       </figure>
     </section>
 
-      <div class="owl-carousel owl-theme">
-        <div> 
-          <a href="" target="_blank">
-            <img  src="/img/VARANDA_DUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTDUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTTRIPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTQUADRUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTVARANDADUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTVARANDATRIPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/EXTVARANDAQUADRUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/INTERNADUPLA.png" alt=""> 
-          </a>
-        </div>
-        <div> 
-          <a href="">
-            <img  src="/img/INTERNAQUADRUPLA.png" alt=""> 
-          </a>
-        </div>
+    <div class="container">
+
+      <div class="carousel">
+            <div class="nav nav-left">
+              <div class="ion-chevron-left carousel-arrow-icon-left">
+                <img style="position: relative; right: 3.2px;" src="img/bx-chevron-left.svg" alt="">
+              </div>
+            </div>
+      
+              <div class="carousel-content">
+
+                <div class="slide slide-1"> 
+                  <a href="" target="_blank">
+                    <img  src="/img/VARANDA_DUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-2"> 
+                  <a href="">
+                    <img  src="/img/EXTDUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-3"> 
+                  <a href="">
+                    <img  src="/img/EXTTRIPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-4"> 
+                  <a href="">
+                    <img  src="/img/EXTQUADRUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-5"> 
+                  <a href="">
+                    <img  src="/img/EXTVARANDADUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-6"> 
+                  <a href="">
+                    <img  src="/img/EXTVARANDATRIPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-7"> 
+                  <a href="">
+                    <img  src="/img/EXTVARANDAQUADRUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-8"> 
+                  <a href="">
+                    <img  src="/img/INTERNADUPLA.png" alt=""> 
+                  </a>
+                </div>
+                <div class="slide slide-9"> 
+                  <a href="">
+                    <img  src="/img/INTERNAQUADRUPLA.png" alt=""> 
+                  </a>
+                </div>
+
+              </div>
+      
+            <div class="nav nav-right">
+              <div class="ion-chevron-right carousel-arrow-icon-right">
+                <img style="position: relative; right: 3px; top: 1px;" src="img/bx-chevron-right.svg"/>
+              </div>
+            </div>
+          </div>
+          
       </div>
+    
 
     <footer class="footer">
       <p>ÚNICO EM ALTO MAR <span>&copy 2022</span></p>
@@ -322,4 +343,6 @@
   <script type="module" src="./js/main.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="/js/nav.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </html>
