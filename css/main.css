@@ -919,7 +919,7 @@ body {
 
 .carousel {
     position: relative;
-    width: 50%; 
+    width: 65%; 
     height: 250px;
     margin: 0 auto;
   }
@@ -939,6 +939,16 @@ body {
     transition: left .4s cubic-bezier(.47,.13,.15,.89);
   }
   
+  .carousel-content a img {
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.carousel-content a img:hover {
+    -webkit-transform: scale(1.01);
+   transform: scale(1.01);
+}
   
   
   .nav {
