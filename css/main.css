@@ -917,80 +917,37 @@ body {
 }
 
 
-.carousel {
-    position: relative;
-    width: 65%; 
-    height: 250px;
-    margin: 0 auto;
-  }
-  
-  .carousel-content {
-    position: relative;
-    overflow: hidden;
-    transition: width .4s;
-    height: 100%;
-  }
-  
-  .slide {
-    height: 100%;
-    background-color: #fff5e0;
-    position: absolute;
-    z-index: 1;
-    transition: left .4s cubic-bezier(.47,.13,.15,.89);
-  }
-  
-  .carousel-content a img {
-    width: 100%;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+.container-cabines {
+    margin: 3em 0em;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
 }
 
-.carousel-content a img:hover {
-    -webkit-transform: scale(1.01);
-   transform: scale(1.01);
+.cabines-content {
+    display: flex;
+    line-height: 1.5em;
+    gap: 1em;
 }
-  
-  
-  .nav {
-    position: absolute;
-    top: 45%;
-    margin-top: -10px;
-    background-color: #143b62;
-    width: 30px;
-    height: 30px;
-    z-index: 2;
+
+.cabines-content h1 {
+    font-size: 25px;
+}
+
+.cabines-content p {
+    font-style: italic;
+}
+
+.cabines-preco {
+    line-height: 2.5em;
+}
+
+.cabines-preco a {
     cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    color: white;
-    -webkit-user-select: none;
-  }
-
-  .nav:hover {
-    background-color: #306497;
-  }
-  
-  .nav-left {
-    left: -25px;
-  }
-  
-  .nav-right {
-    right: -25px;
-  }
-  
-  .carousel-arrow-icon-left {
-    
-    margin-left: 5px;
-    margin-top: 2px;
-  }
-  
-  .carousel-arrow-icon-right {
-    
-    margin-left: 7px;
-    margin-top: 2px;
-  }
-  
+    padding: .5em 4em;
+    background-color: #143b62;
+    color: #c1ad85;
+}
 /*responsivo*/
 
 @media only screen and (max-width: 1765px) {
@@ -1041,7 +998,11 @@ body {
         height: 250px;
         margin: 0 auto;
       }
+
+    
 }
+
+
 
 @media only screen and (max-width: 1235px) {
     .atracoes-container div figure{
@@ -1052,6 +1013,20 @@ body {
         width: 50%;
     }
 
+    .container-cabines, .cabines-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+       
+    }
+
+    #btn-final{
+        margin-right: 0em!important;
+    }
+
+    #cabine-final {
+        margin-left: 0em!important;
+    }
 }
 
 @media only screen and (max-width: 1125px) {
