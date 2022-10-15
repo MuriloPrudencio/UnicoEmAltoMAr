@@ -4,6 +4,10 @@
     width: 55vw;
 }
 
+.cabines-preco {
+    color: #143b62;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -984,6 +988,12 @@ body {
     
 }
 
+@media only screen and (max-width: 1425px) {
+    .text-in {
+        width: 73.5vw;
+    }
+}
+
 @media only screen and (max-width: 1351px){
     .atracoes {
         width: 50%!important;
@@ -1018,6 +1028,22 @@ body {
     
 }
 
+@media only screen and (max-width: 1305px){
+    .container-cabines, .cabines-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+       
+    }
+
+    div.con-100 {
+       position: relative;
+       left: 2.7em;
+       
+    }
+
+}
+
 
 
 @media only screen and (max-width: 1235px) {
@@ -1029,54 +1055,13 @@ body {
         width: 50%;
     }
 
-    .container-cabines, .cabines-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
-       
-    }
-
-    .container-cabines {
-        margin: 1em 0em!important;
-    }
-
-    .cabines-content {
-        margin-left: 0em!important;
-        
-    }
-
-    .cabines-content h1{
-        text-align: center;
-    }
-
     .content-venda {
         align-items: center;
         margin: 0 1em;
     }
 
-    .cabines-preco {
-        margin-right: 0em!important;
-    }
-
-    #interna-4 {
-        margin-left: 0em!important;
-    }
-
-    #varanda-c {
-        margin-right: 0!important;
-    }
-
-    #ext-4 {
-        margin-left: 0!important;
-    }
-
-    #btn-final{
-        margin-right: 0em!important;
-    }
-
-    #cabine-final {
-        margin-left: 0em!important;
-    }
+    
+  
 }
 
 @media only screen and (max-width: 1125px) {
@@ -1236,6 +1221,10 @@ body {
     .conteiner-countdown{
         margin-bottom: 5%;
     }
+
+    div.con-100 h1 {
+        font-size: 17px;
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1287,6 +1276,11 @@ body {
         width: 90%;
         margin: 0em 1em;
     }
+
+    div.con-100 {
+        width: 450px!important;
+        
+     }
 }
 
 @media only screen and (max-width: 580px){
@@ -1342,7 +1336,7 @@ body {
     }
 
     p.text-in {
-        width: 85vw;
+        width: 69vw!important;
     }
 
     #info,
@@ -1404,6 +1398,9 @@ body {
         height: 550px!important;
     }
 
+    .msc-content .content p {
+        width: 450px!important;
+    }
     
 }
 
@@ -1427,5 +1424,22 @@ body {
     .slider > div{
         height: 200px;
     }
+
+    p.text-in {
+        width: 90vw!important;
+    }
+
+    .msc-content .content p {
+        width: 340px!important;
+    }
+
 }
 
+
+@media only screen and (max-width: 380px) {
+
+    .msc-content .content p {
+        width: 330px!important;
+    }
+
+}
