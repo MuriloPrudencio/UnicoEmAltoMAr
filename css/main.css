@@ -755,7 +755,7 @@ body {
 }
   
 .countdown li {
-    font-family: "Poppins", Georgia, "Times New Roman", Times, serif;
+    font-family: 'montserrat-alternates', 'sans-serif';
     font-style: italic;
     padding: 1rem;
     color: #c1ad85;
@@ -766,7 +766,7 @@ body {
 }
   
 .countdown li span {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'montserrat-alternates', 'sans-serif';
     font-style: normal;
     font-size: 2rem;
     color: #fff;
@@ -930,13 +930,18 @@ body {
     gap: 1em;
 }
 
-.cabines-preco h1 {
-    font-size: 20px;
+.cabines-content h1 {
+    
     color: #143b62;
 }
 
+.cabines-content .content-venda strong {
+    color: #143b62!important;
+}
+
+
 .cabines-content p {
-    font-style: italic;
+    color: #143b62;
 }
 
 .cabines-preco {
@@ -1026,6 +1031,28 @@ body {
         align-items: center;
         gap: 1.5em;
        
+    }
+
+    .container-cabines {
+        margin: 1em 0em!important;
+    }
+
+    .cabines-content {
+        margin-left: 0em!important;
+        
+    }
+
+    .cabines-content h1{
+        text-align: center;
+    }
+
+    .content-venda {
+        align-items: center;
+        margin: 0 1em;
+    }
+
+    .cabines-preco {
+        margin-right: 0em!important;
     }
 
     #interna-4 {
@@ -1309,6 +1336,10 @@ body {
     .container-tour iframe{
         margin: 0% auto;
         width: 400px;
+    }
+
+    p.text-in {
+        width: 85vw!important;
     }
 
     #info,
