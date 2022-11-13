@@ -19,6 +19,26 @@
     margin: auto;
 }
 
+.container-artistas2 figure {
+    bottom: 48.13em;
+    position: relative;
+    margin: auto!important;
+    width: 85% ;
+    display: none;
+}
+
+.container-artistas2 figure img {
+    width: 100% ;
+}
+
+.container-artistas2 figure.leter2 img {
+    position: relative!important;
+    width: 90.5%;
+    left: 4.8%;
+    bottom: 20vh;
+    margin: auto;
+}
+
 
 .text-in {
     width: 55vw;
@@ -1406,6 +1426,41 @@ body {
     position: relative;
     margin: auto!important;
     width: 95%;
+    display: none;
+
+}
+
+.container-artistas2 figure{
+    bottom: 57.15em;
+    position: relative;
+    margin: auto!important;
+    width: 95%;
+    display: block;
+}
+
+.container-artistas2 figure.leter2 img {
+    position: relative!important;
+    width: 90.5%;
+    left: 4.8%;
+    bottom: 10vh;
+    margin: auto;
+}
+
+.background > div {
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 1350px;
+    
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff5e0;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
 }
 }
 
@@ -1463,6 +1518,39 @@ body {
         width: 450px!important;
         
      }
+
+     .container-artistas2 figure{
+        bottom: 57.15em;
+        position: relative;
+        margin: auto!important;
+        width: 95%;
+        display: block;
+    }
+    
+    .container-artistas2 figure.leter2 img {
+        position: relative!important;
+        width: 90.5%;
+        left: 4.8%;
+        bottom: 10vh;
+        margin: auto;
+    }
+    
+    .background > div {
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 1350px;
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #fff5e0;
+        overflow: hidden;
+        -moz-transition: transform .4s;
+        -o-transition: transform .4s;
+        -webkit-transition: transform .4s;
+        transition: transform .4s;
+    }
 }
 
 @media only screen and (max-width: 580px){
@@ -1622,6 +1710,39 @@ body {
         width: 95%;
     }
 
+    .container-artistas2 figure{
+        bottom: 34em;
+        position: relative;
+        margin: auto!important;
+        width: 95%;
+        display: block;
+    }
+    
+    .container-artistas2 figure.leter2 img {
+        position: relative!important;
+        width: 90.5%;
+        left: 4.8%;
+        bottom: 6vh;
+        margin: auto;
+    }
+    
+    .background > div {
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 950px!important;
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #fff5e0;
+        overflow: hidden;
+        -moz-transition: transform .4s;
+        -o-transition: transform .4s;
+        -webkit-transition: transform .4s;
+        transition: transform .4s;
+    }
+
 }
 
 @media only screen and (max-width: 415px){
@@ -1669,6 +1790,39 @@ body {
         margin: auto!important;
         width: 95%;
     }
+
+    .container-artistas2 figure{
+        bottom: 31.9em;
+        position: relative;
+        margin: auto!important;
+        width: 95%;
+        display: block;
+    }
+    
+    .container-artistas2 figure.leter2 img {
+        position: relative!important;
+        width: 90.5%;
+        left: 4.8%;
+        bottom: 6vh;
+        margin: auto;
+    }
+    
+    .background > div {
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 950px!important;
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #fff5e0;
+        overflow: hidden;
+        -moz-transition: transform .4s;
+        -o-transition: transform .4s;
+        -webkit-transition: transform .4s;
+        transition: transform .4s;
+    }
 }
 
 
@@ -1676,6 +1830,39 @@ body {
 
     .msc-content .content p {
         width: 330px!important;
+    }
+
+    .container-artistas2 figure{
+        bottom: 30em;
+        position: relative;
+        margin: auto!important;
+        width: 95%;
+        display: block;
+    }
+    
+    .container-artistas2 figure.leter2 img {
+        position: relative!important;
+        width: 90.5%;
+        left: 4.8%;
+        bottom: 7vh;
+        margin: auto;
+    }
+    
+    .background > div {
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 950px!important;
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #fff5e0;
+        overflow: hidden;
+        -moz-transition: transform .4s;
+        -o-transition: transform .4s;
+        -webkit-transition: transform .4s;
+        transition: transform .4s;
     }
 
 }
@@ -1686,5 +1873,38 @@ body {
         position: relative;
         margin: auto!important;
         width: 95%;
+    }
+
+    .container-artistas2 figure{
+        bottom: 29.9em;
+        position: relative;
+        margin: auto!important;
+        width: 95%;
+        display: block;
+    }
+    
+    .container-artistas2 figure.leter2 img {
+        position: relative!important;
+        width: 90.5%;
+        left: 4.8%;
+        bottom: 6vh;
+        margin: auto;
+    }
+    
+    .background > div {
+        background-position: center center;
+        display: block;
+        width: 100%;
+        height: 950px!important;
+        
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #fff5e0;
+        overflow: hidden;
+        -moz-transition: transform .4s;
+        -o-transition: transform .4s;
+        -webkit-transition: transform .4s;
+        transition: transform .4s;
     }
 }
