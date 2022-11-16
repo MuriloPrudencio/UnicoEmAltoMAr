@@ -14,7 +14,7 @@ mostrarTempo();
 setInterval(mostrarTempo, 1000);
 })
 
-
+/*
 var carousel = document.querySelector('.carousel');
 var carouselContent = document.querySelector('.carousel-content');
 var slides = document.querySelectorAll('.slide');
@@ -188,4 +188,4 @@ function moveBasedOnMouse(e) {
   document.removeEventListener('mouseup', moveBasedOnMouse);
   carouselContent.removeEventListener('mousemove', slightMove);
 }
-
+*/
